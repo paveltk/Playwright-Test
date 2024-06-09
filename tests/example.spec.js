@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 //const { Imglyeditorpage } = require ('../pages/page.js');
 
-test('clicking on image asset library', async ({ page }) => {
+test('adding the image and verifying its presence', async ({ page }) => {
     //const imglyeditorPage = new Imglyeditorpage();
     const load_locator = page.locator('div > div > div.UBQ_Theme-module__block--sJF92.UBQ_GlobalStyles-module__block--zGWhl > div > div > div > div > div > div:nth-child(2) > h2');
     const image_library = page.locator('div > div > div.UBQ_Theme-module__block--sJF92.UBQ_GlobalStyles-module__block--zGWhl > div > div.UBQ_Editor-module__body--Pwi6o > div.UBQ_Dock-module__block--yQhta.UBQ_AssetLibraryDock-module__block--Cgfpm.UBQ_Editor-module__dock--DOhMf.UBQ_Dock-module__big--oyiIY > div:nth-child(2) > button:nth-child(3)');
