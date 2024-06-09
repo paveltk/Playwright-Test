@@ -13,7 +13,7 @@ test('clicking on image asset library', async ({ page }) => {
     await page.goto('https://ubique.img.ly/main/apps/cesdk_web/web/index.html');
     await expect(load_locator).toBeHidden();
     await page.getByText('Images').click();
-    await expect(Imglyeditorpage.searchBox).toBeVisible();
+    await expect(searchbox).toBeVisible();
     await expect(image_library).toBeVisible();
     await expect(images_box).toBeVisible();
     await page.locator('#ubq-portal-container_panelLeft > div > div > div > div > div.UBQ_AssetLibraryContent-module__block--SroUk > div > div > div:nth-child(2) > div > div.UBQ_AssetLibrarySection-module__paginationContainer--4-kTI > div > div > div:nth-child(2)').click();
