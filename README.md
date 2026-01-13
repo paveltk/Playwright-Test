@@ -1,1 +1,1 @@
-Testing Playwright implementation of automation
+Testing Playwright implementation of automation cases
